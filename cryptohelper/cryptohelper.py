@@ -5,6 +5,7 @@ from secretsharing import HexToHexSecretSharer
 
 import pickle
 import math
+import codecs
 
 
 AES_MODE = AES.MODE_CFB
@@ -34,7 +35,7 @@ def import_key(key_pem, passphrase=None):
 
 def generate_passphrase(length=32):
     pass_raw = get_random_bytes(length//2)
-    return pass_raw.hex()
+    return codecs.encode(pass_raw, 'hex').decode()
 
 
 def split_passphrase(passphrase, share_threshold=2, num_shares=6):

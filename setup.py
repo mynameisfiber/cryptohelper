@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='cryptohelper',
-    version='0.1a',
+    version='0.2.1',
     description='Helper functions to make using RSA+AES encryption with '
                 'a redundantly split shared key more easy',
     author='Micha Gorelick',
