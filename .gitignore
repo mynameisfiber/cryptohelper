@@ -1,0 +1,6 @@
+*.sw*
+*.egg-info/
+dist/
+build/
+.cache/
+__pycache__/
