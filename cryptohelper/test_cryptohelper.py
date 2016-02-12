@@ -2,7 +2,8 @@ from . import cryptohelper as ch
 import random
 import string
 
-def test_import_export():
+
+def test_holistic():
     share_threshold = 2
     # generate a random passphrase and split it into shares
     passphrase = ch.generate_passphrase(6)
@@ -24,6 +25,3 @@ def test_import_export():
     rec_data = ch.decrypt_blob(privkey, enc_data)
 
     assert(data == rec_data)
-
-
-
