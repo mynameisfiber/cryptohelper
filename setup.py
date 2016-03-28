@@ -26,7 +26,7 @@ setup(
         "secretsharing>=0.2.9",
     ],
     dependency_links=[
-        "https://github.com/mynameisfiber/secret-sharing/tarball/master#egg=secretsharing",
+        "git+https://github.com/mynameisfiber/secret-sharing.git",
     ],
 )
 
